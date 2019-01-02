@@ -1,0 +1,22 @@
+main {
+    margin-top: 1rem;
+    width: 80%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bttn {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14pt;
+    outline: none;
+}
+
+.bttn-pink {
+    background-color: rgb(255, 58, 245);
+}
+
+.errorMsg {
+    color: red;
+}

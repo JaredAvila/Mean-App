@@ -1,0 +1,9 @@
+.header {
+    padding: 5px;
+    background-color: rgb(167, 54, 54);
+}
+
+.header h2 {
+    padding-left: 25px;
+    font-family: 'Charm', cursive;
+}

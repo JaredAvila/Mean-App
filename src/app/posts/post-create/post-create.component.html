@@ -1,0 +1,25 @@
+<div class="card">
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <input
+      required
+      minlength="3"
+      type="text"
+      name="title"
+      ngModel
+      #title="ngModel"
+      placeholder="Post title"
+    />
+    <p class="errorMsg" *ngIf="title.invalid">Please enter a title</p>
+    <textarea
+      rows="6"
+      name="content"
+      ngModel
+      required
+      #content="ngModel"
+      placeholder="Post content"
+    >
+    </textarea>
+    <p class="errorMsg" *ngIf="content.invalid">Please enter a post</p>
+    <button class="bttn bttn-pink" type="submit">Save Post</button>
+  </form>
+</div>
