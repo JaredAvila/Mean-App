@@ -3,7 +3,7 @@
     <div class="post" *ngFor="let post of posts">
       <h3>{{ post.title }}</h3>
       <p>{{ post.content }}</p>
-      <button class="bttn">EDIT</button> <button class="bttn">DELETE</button>
+      <button class="bttn">EDIT</button> <button class="bttn" (click)="onDelete(post.id)">DELETE</button>
     </div>
   </div>
   <p class="noPosts" *ngIf="posts.length <= 0">No posts added yet</p>
